@@ -1,2 +1,2 @@
-# swiftmtp-website
-The website of the tool SwiftMTP.
+# SwiftMTP website
+The website source files of the tool [SwiftMTP](https://github.com/Neighbor-Z/SwiftMTP).

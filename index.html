@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftMTP – Native MTP File Manager for macOS</title>
+  <meta name="description"
+    content="SwiftMTP is a lightweight, native Swift-based MTP file manager for macOS. Browse, transfer, and manage files on Android devices with blazing speed and full localization support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon-32x32@2x.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <img src="assets/icon.png" alt="SwiftMTP icon" class="nav-icon" />
+        <span class="nav-title">SwiftMTP</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" id="nav-features">Features</a>
+        <a href="#comparison" id="nav-comparison">Compare</a>
+        <a href="#get-started" id="nav-started">Get Started</a>
+        <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-outline btn-sm"
+          id="nav-github">GitHub</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode"
+          title="Toggle light/dark mode">
+          <span class="theme-toggle-icon theme-icon-dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+          <span class="theme-toggle-icon theme-icon-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+
+      <!-- Left column -->
+      <div class="hero-text">
+        <img src="assets/icon.png" alt="SwiftMTP app icon" class="hero-app-icon" id="hero-icon" />
+        <h1 class="hero-title" id="hero-title">SwiftMTP</h1>
+        <p class="hero-desc" id="hero-desc">
+          A lightweight, modern macOS app for MTP device management.
+        </p>
+        <div class="hero-cta" id="hero-cta">
+          <a href="https://github.com/Neighbor-Z/SwiftMTP/releases/latest" target="_blank" rel="noopener"
+            class="btn btn-primary" id="btn-download">
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 3v10m0 0-3-3m3 3 3-3M4 17h12" />
+            </svg>
+            Download
+          </a>
+          <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-ghost"
+            id="btn-github">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            View on GitHub
+          </a>
+        </div>
+        <p class="hero-sysreq" id="hero-sysreq">
+          Requires macOS 12.0 or later · Universal binary (Apple Silicon &amp; Intel)
+        </p>
+      </div>
+
+      <!-- Right column – screenshot -->
+      <div class="hero-visual" id="hero-visual">
+        <div class="screenshot-frame">
+          <img src="assets/screenshot.png" alt="SwiftMTP file browser" class="screenshot-img" />
+        </div>
+        <div class="hero-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Almost everything you need.</h2>
+        <p class="section-sub">A focused feature set designed to make MTP management effortless on macOS.</p>
+      </div>
+      <div class="features-grid" id="features-grid">
+
+        <div class="feature-card" id="feat-native">
+          <div class="feat-icon-wrap feat-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <path d="M9 9h6M9 12h6M9 15h4" />
+            </svg>
+          </div>
+          <h3>Native Swift UI</h3>
+          <p>Built entirely with SwiftUI &amp; AppKit — feels at home on macOS from day one, with familiar controls and
+            smooth animations.</p>
+        </div>
+
+        <div class="feature-card" id="feat-speed">
+          <div class="feat-icon-wrap feat-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </div>
+          <h3>Blazing Transfer Speed</h3>
+          <p>Powered by the Kalam MTP kernel — delivering fast,
+            reliable transfers every time.</p>
+        </div>
+
+        <div class="feature-card" id="feat-dnd">
+          <div class="feat-icon-wrap feat-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 16l-4-4m0 0 4-4m-4 4h18M17 8l4 4m0 0-4 4" />
+            </svg>
+          </div>
+          <h3>Drag &amp; Drop</h3>
+          <p>Import files by dragging them straight from Finder into SwiftMTP. Intuitive, fast, and completely native.
+          </p>
+        </div>
+
+        <div class="feature-card" id="feat-compact">
+          <div class="feat-icon-wrap feat-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <h3>Tiny Footprint</h3>
+          <p>Under 20 MB installed. No bloat, no runtime — just a focused, efficient native app that
+            gets out of your way.</p>
+        </div>
+
+        <div class="feature-card" id="feat-i18n">
+          <div class="feat-icon-wrap feat-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z" />
+              <path d="M3.6 9h16.8M3.6 15h16.8" />
+              <path d="M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
+            </svg>
+          </div>
+          <h3>Full Localization</h3>
+          <p>Complete multilingual support via <code>Localizable.xcstrings</code> — including CJK characters rendered
+            correctly.</p>
+        </div>
+
+        <div class="feature-card" id="feat-progress">
+          <div class="feat-icon-wrap feat-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+          </div>
+          <h3>Real-time Progress</h3>
+          <p>Live transfer progress bars and status indicators keep you informed at every step.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COMPARISON ─── -->
+  <section class="comparison" id="comparison">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">How does it compare?</h2>
+        <p class="section-sub">SwiftMTP is trying to become even better.
+        </p>
+      </div>
+      <div class="table-wrap">
+        <table class="comp-table" id="comp-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="col-highlight">SwiftMTP</th>
+              <th>OpenMTP</th>
+              <th>App Store A</th>
+              <th>App Store B</th>
+              <th>App Store C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">Architecture</td>
+              <td class="col-highlight"><span class="badge-good">Universal</span></td>
+              <td><span class="badge-warn">Separate pkg</span></td>
+              <td><span class="badge-good">Universal</span></td>
+              <td><span class="badge-bad">Apple Silicon</span></td>
+              <td><span class="badge-good">Universal</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">macOS Support</td>
+              <td class="col-highlight">12.0+</td>
+              <td>11.0+</td>
+              <td>10.15+</td>
+              <td>12.0+</td>
+              <td><span class="badge-bad">14.6+</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">App Size</td>
+              <td class="col-highlight"><span class="badge-good">&lt; 20 MB</span></td>
+              <td><span class="badge-bad">~360 MB</span></td>
+              <td><span class="badge-good">&lt; 20 MB</span></td>
+              <td><span class="badge-good">&lt; 20 MB</span></td>
+              <td><span class="badge-good">&lt; 20 MB</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">Transfer Speed</td>
+              <td class="col-highlight"><span class="badge-good">Fast</span></td>
+              <td><span class="badge-good">Fast</span></td>
+              <td><span class="badge-bad">Slow</span></td>
+              <td>Average</td>
+              <td><span class="badge-bad">Not working</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">User Interface</td>
+              <td class="col-highlight"><span class="badge-good">Native Swift</span></td>
+              <td><span class="badge-bad">Web-based</span></td>
+              <td>Near-Native</td>
+              <td>Near-Native</td>
+              <td>Near-Native</td>
+            </tr>
+            <tr>
+              <td class="row-label">Localization</td>
+              <td class="col-highlight"><span class="badge-good">Multiple languages</span></td>
+              <td><span class="badge-warn">English Only</span></td>
+              <td><span class="badge-warn">English Only</span></td>
+              <td><span class="badge-bad">Latin alphabets Only</span></td>
+              <td><span class="badge-warn">English Only</span></td>
+            </tr>
+            <tr>
+              <td class="row-label">Drag &amp; Drop</td>
+              <td class="col-highlight"><span class="badge-good">✓ Supported</span></td>
+              <td><span class="badge-good">✓ Supported</span></td>
+              <td>—</td>
+              <td><span class="badge-bad">✗ None</span></td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GET STARTED ─── -->
+  <section class="get-started" id="get-started">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Ready in minutes.</h2>
+        <p class="section-sub">Get SwiftMTP up and running on your Mac in just a few steps.</p>
+      </div>
+      <div class="steps" id="steps">
+        <div class="step" id="step-1">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Download the release</h3>
+            <p>Grab the latest <code>.dmg</code> from the <a href="https://github.com/Neighbor-Z/SwiftMTP/releases/latest"
+                target="_blank">Releases page</a>, or build from source using Xcode 15+.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step" id="step-2">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Connect your device</h3>
+            <p>Plug in your Android phone via USB and set it to <strong>File Transfer (MTP)</strong> mode. SwiftMTP will
+              detect it automatically.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step" id="step-3">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Browse &amp; transfer</h3>
+            <p>Navigate your device's file system, drag &amp; drop files, and watch real-time progress as your files
+              move at full speed.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-block" id="cta-block">
+        <a href="https://github.com/Neighbor-Z/SwiftMTP/releases/latest" target="_blank" rel="noopener"
+          class="btn btn-primary btn-lg" id="cta-download">
+          <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 3v10m0 0-3-3m3 3 3-3M4 17h12" />
+          </svg>
+          Download SwiftMTP
+        </a>
+        <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"
+          id="cta-github">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+          Star on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LOCALIZATION COMMUNITY ─── -->
+  <section class="l10n" id="localization">
+    <div class="section-inner">
+      <div class="l10n-inner">
+        <div class="l10n-text">
+          <div class="l10n-tag">🌍 Community</div>
+          <h2 class="l10n-title">Help us speak your language.</h2>
+          <p class="l10n-desc">
+            SwiftMTP currently supports <strong>English, Chinese, Japanese, and Spanish</strong>.
+            Every user deserves a native experience in their own language — and we can't do it alone.
+            You can improve the translation or add your new language freely. Your contribution makes a real difference.
+          </p>
+          <div class="l10n-langs" id="l10n-langs">
+            <span class="lang-chip">English</span>
+            <span class="lang-chip">中文</span>
+            <span class="lang-chip">日本語</span>
+            <span class="lang-chip">Español</span>
+            <span class="lang-chip lang-chip-add">+ Your languages</span>
+          </div>
+          <a href="https://github.com/Neighbor-Z/SwiftMTP/pulls" target="_blank" rel="noopener"
+            class="btn btn-primary btn-lg l10n-btn" id="l10n-btn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            Contribute on GitHub
+          </a>
+          <p class="l10n-hint">Open <code>Localizable.xcstrings</code> and add your translations — it's that simple.</p>
+        </div>
+        <div class="l10n-visual">
+          <div class="l10n-globe">🌐</div>
+          <div class="l10n-orbits">
+            <div class="l10n-orbit" style="--d:0s;--r:90px;--a:0deg" data-label="Deutsch">DE</div>
+            <div class="l10n-orbit" style="--d:.8s;--r:90px;--a:60deg" data-label="Français">FR</div>
+            <div class="l10n-orbit" style="--d:1.6s;--r:90px;--a:120deg" data-label="한국어">KO</div>
+            <div class="l10n-orbit" style="--d:2.4s;--r:90px;--a:180deg" data-label="More">...</div>
+            <div class="l10n-orbit" style="--d:3.2s;--r:90px;--a:240deg" data-label="العربية">AR</div>
+            <div class="l10n-orbit" style="--d:4s;--r:90px;--a:300deg" data-label="Українська">UK</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon.png" alt="SwiftMTP" class="footer-icon" />
+        <span>SwiftMTP</span>
+      </div>
+      <p class="footer-copy">Released under the <a href="https://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GPL
+          License</a> · Inspired by <a href="https://github.com/ganeshrvel/openmtp/" target="_blank">OpenMTP</a></p>
+      <p class="footer-copy">Built with ❤️ in Swift for macOS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
