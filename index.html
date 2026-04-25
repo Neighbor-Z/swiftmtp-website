@@ -26,11 +26,25 @@
         <span class="nav-title">SwiftMTP</span>
       </div>
       <div class="nav-links">
-        <a href="#features" id="nav-features">Features</a>
-        <a href="#comparison" id="nav-comparison">Compare</a>
-        <a href="#get-started" id="nav-started">Get Started</a>
+        <a href="#features" id="nav-features" data-i18n="nav_features">Features</a>
+        <a href="#comparison" id="nav-comparison" data-i18n="nav_compare">Compare</a>
+        <a href="#get-started" id="nav-started" data-i18n="nav_started">Get Started</a>
         <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-outline btn-sm"
-          id="nav-github">GitHub</a>
+          id="nav-github" data-i18n="nav_github">GitHub</a>
+        <div class="custom-dropdown" id="lang-menu">
+          <button class="btn btn-outline btn-sm dropdown-toggle" id="lang-toggle" aria-haspopup="listbox" aria-expanded="false">
+            <span class="dropdown-label" id="lang-label">English</span>
+            <svg class="dropdown-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="dropdown-list" id="lang-list" role="listbox">
+            <li class="dropdown-item" data-value="en" role="option">English</li>
+            <li class="dropdown-item" data-value="zh-Hans" role="option">简体中文</li>
+            <li class="dropdown-item" data-value="zh-Hant" role="option">繁體中文</li>
+            <li class="dropdown-item" data-value="ja" role="option">日本語</li>
+            <li class="dropdown-item" data-value="es" role="option">Español</li>
+            <li class="dropdown-item" data-value="ar" role="option">العربية</li>
+          </ul>
+        </div>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode"
           title="Toggle light/dark mode">
           <span class="theme-toggle-icon theme-icon-dark">
@@ -57,8 +71,8 @@
       <!-- Left column -->
       <div class="hero-text">
         <img src="assets/icon.png" alt="SwiftMTP app icon" class="hero-app-icon" id="hero-icon" />
-        <h1 class="hero-title" id="hero-title">SwiftMTP</h1>
-        <p class="hero-desc" id="hero-desc">
+        <h1 class="hero-title" id="hero-title" data-i18n="hero_title">SwiftMTP</h1>
+        <p class="hero-desc" id="hero-desc" data-i18n="hero_desc">
           A lightweight, modern macOS app for MTP device management.
         </p>
         <div class="hero-cta" id="hero-cta">
@@ -67,7 +81,7 @@
             <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M10 3v10m0 0-3-3m3 3 3-3M4 17h12" />
             </svg>
-            Download
+            <span data-i18n="btn_download">Download</span>
           </a>
           <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-ghost"
             id="btn-github">
@@ -75,10 +89,10 @@
               <path
                 d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
             </svg>
-            View on GitHub
+            <span data-i18n="btn_github">View on GitHub</span>
           </a>
         </div>
-        <p class="hero-sysreq" id="hero-sysreq">
+        <p class="hero-sysreq" id="hero-sysreq" data-i18n="hero_sysreq">
           Requires macOS 12.0 or later · Universal binary (Apple Silicon &amp; Intel)
         </p>
       </div>
@@ -98,8 +112,8 @@
   <section class="features" id="features">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">Almost everything you need.</h2>
-        <p class="section-sub">A focused feature set designed to make MTP management effortless on macOS.</p>
+        <h2 class="section-title" data-i18n="feat_title">Almost everything you need.</h2>
+        <p class="section-sub" data-i18n="feat_sub">A focused feature set designed to make MTP management effortless on macOS.</p>
       </div>
       <div class="features-grid" id="features-grid">
 
@@ -110,18 +124,20 @@
               <path d="M9 9h6M9 12h6M9 15h4" />
             </svg>
           </div>
-          <h3>Native UI</h3>
-          <p>Built with SwiftUI &amp; AppKit with familiar controls, Quick Look preview support and smooth animations.</p>
+          <h3 data-i18n="feat_native">Native UI</h3>
+          <p data-i18n="feat_native_desc">Built with SwiftUI &amp; AppKit with familiar controls, Quick Look preview support and smooth animations.</p>
         </div>
 
         <div class="feature-card" id="feat-favorites">
           <div class="feat-icon-wrap feat-orange">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
             </svg>
           </div>
-          <h3>Favorite Folders</h3>
-          <p>Easily add your frequently accessed folders to personal favorites for quick and convenient navigation.</p>
+          <h3 data-i18n="feat_fav">Favorite Folders</h3>
+          <p data-i18n="feat_fav_desc">Easily add your frequently accessed folders to personal favorites for quick and convenient navigation.</p>
         </div>
 
         <div class="feature-card" id="feat-dnd">
@@ -130,9 +146,8 @@
               <path d="M7 16l-4-4m0 0 4-4m-4 4h18M17 8l4 4m0 0-4 4" />
             </svg>
           </div>
-          <h3>Drag &amp; Drop</h3>
-          <p>Import files by dragging them straight from Finder into SwiftMTP and vice versa.
-          </p>
+          <h3 data-i18n="feat_dnd">Drag &amp; Drop</h3>
+          <p data-i18n="feat_dnd_desc">Import files by dragging them straight from Finder into SwiftMTP and vice versa.</p>
         </div>
 
         <div class="feature-card" id="feat-compact">
@@ -142,8 +157,8 @@
               <path d="M12 8v4l3 3" />
             </svg>
           </div>
-          <h3>Tiny Footprint</h3>
-          <p>Under 20 MB installed. No bloat, no runtime.</p>
+          <h3 data-i18n="feat_compact">Tiny Footprint</h3>
+          <p data-i18n="feat_compact_desc">Under 20 MB installed. No bloat, no runtime.</p>
         </div>
 
         <div class="feature-card" id="feat-i18n">
@@ -154,8 +169,8 @@
               <path d="M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
             </svg>
           </div>
-          <h3>Full Localization</h3>
-          <p>Complete multilingual support via <code>Localizable.xcstrings</code> — including CJK characters rendered
+          <h3 data-i18n="feat_i18n">Full Localization</h3>
+          <p data-i18n="feat_i18n_desc">Complete multilingual support via <code>Localizable.xcstrings</code> — including CJK characters rendered
             correctly.</p>
         </div>
 
@@ -166,8 +181,8 @@
               <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
             </svg>
           </div>
-          <h3>Real-time Progress</h3>
-          <p>Live transfer progress bars and status indicators keep you informed at every step.</p>
+          <h3 data-i18n="feat_progress">Real-time Progress</h3>
+          <p data-i18n="feat_progress_desc">Live transfer progress bars and status indicators keep you informed at every step.</p>
         </div>
 
       </div>
@@ -178,9 +193,8 @@
   <section class="comparison" id="comparison">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">How does it compare?</h2>
-        <p class="section-sub">SwiftMTP is trying to become even better.
-        </p>
+        <h2 class="section-title" data-i18n="comp_title">How does it compare?</h2>
+        <p class="section-sub" data-i18n="comp_sub">SwiftMTP is trying to become even better.</p>
       </div>
       <div class="table-wrap">
         <table class="comp-table" id="comp-table">
@@ -188,25 +202,25 @@
             <tr>
               <th></th>
               <th class="col-highlight">SwiftMTP</th>
-              <th>Open Source A</th>
-              <th>Open Source B</th>
-              <th>App Store A</th>
-              <th>App Store B</th>
-              <th>App Store C</th>
+              <th data-i18n="comp_th_osa">Open Source A</th>
+              <th data-i18n="comp_th_osb">Open Source B</th>
+              <th data-i18n="comp_th_asa">App Store A</th>
+              <th data-i18n="comp_th_asb">App Store B</th>
+              <th data-i18n="comp_th_asc">App Store C</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="row-label">Architecture</td>
-              <td class="col-highlight"><span class="badge-good">Universal</span></td>
-              <td><span class="badge-warn">Separate pkg</span></td>
-              <td><span class="badge-bad">Apple Silicon</span></td>
-              <td><span class="badge-good">Universal</span></td>
-              <td><span class="badge-bad">Apple Silicon</span></td>
-              <td><span class="badge-good">Universal</span></td>
+              <td class="row-label" data-i18n="comp_arch">Architecture</td>
+              <td class="col-highlight"><span class="badge-good" data-i18n="comp_univ">Universal</span></td>
+              <td><span class="badge-warn" data-i18n="comp_sep">Separate pkg</span></td>
+              <td><span class="badge-bad" data-i18n="comp_silicon">Apple Silicon</span></td>
+              <td><span class="badge-good" data-i18n="comp_univ">Universal</span></td>
+              <td><span class="badge-bad" data-i18n="comp_silicon">Apple Silicon</span></td>
+              <td><span class="badge-good" data-i18n="comp_univ">Universal</span></td>
             </tr>
             <tr>
-              <td class="row-label">macOS Support</td>
+              <td class="row-label" data-i18n="comp_os">macOS Support</td>
               <td class="col-highlight">12.0+</td>
               <td>11.0+</td>
               <td>13.0+</td>
@@ -215,7 +229,7 @@
               <td><span class="badge-bad">14.6+</span></td>
             </tr>
             <tr>
-              <td class="row-label">App Size</td>
+              <td class="row-label" data-i18n="comp_size">App Size</td>
               <td class="col-highlight"><span class="badge-good">&lt; 20 MB</span></td>
               <td><span class="badge-bad">~360 MB</span></td>
               <td><span class="badge-good">~20 MB</span></td>
@@ -224,54 +238,54 @@
               <td><span class="badge-good">&lt; 20 MB</span></td>
             </tr>
             <tr>
-              <td class="row-label">Transfer Speed</td>
-              <td class="col-highlight"><span class="badge-good">Fast</span></td>
-              <td><span class="badge-good">Fast</span></td>
-              <td>Average</td>
-              <td><span class="badge-bad">Slow</span></td>
-              <td>Average</td>
-              <td><span class="badge-bad">Not working</span></td>
+              <td class="row-label" data-i18n="comp_speed">Transfer Speed</td>
+              <td class="col-highlight"><span class="badge-good" data-i18n="comp_fast">Fast</span></td>
+              <td><span class="badge-good" data-i18n="comp_fast">Fast</span></td>
+              <td data-i18n="comp_avg">Average</td>
+              <td><span class="badge-bad" data-i18n="comp_slow">Slow</span></td>
+              <td data-i18n="comp_avg">Average</td>
+              <td><span class="badge-bad" data-i18n="comp_broken">Not working</span></td>
             </tr>
             <tr>
-              <td class="row-label">User Interface</td>
-              <td class="col-highlight"><span class="badge-good">Native Swift</span></td>
-              <td><span class="badge-bad">Web-based</span></td>
-              <td><span class="badge-good">Native Swift</span></td>
-              <td>Near-Native</td>
-              <td>Near-Native</td>
-              <td>Near-Native</td>
+              <td class="row-label" data-i18n="comp_ui">User Interface</td>
+              <td class="col-highlight"><span class="badge-good" data-i18n="comp_native">Native Swift</span></td>
+              <td><span class="badge-bad" data-i18n="comp_web">Web-based</span></td>
+              <td><span class="badge-good" data-i18n="comp_native">Native Swift</span></td>
+              <td data-i18n="comp_near">Near-Native</td>
+              <td data-i18n="comp_near">Near-Native</td>
+              <td data-i18n="comp_near">Near-Native</td>
             </tr>
             <tr>
-              <td class="row-label">Localization</td>
-              <td class="col-highlight"><span class="badge-good">Multiple languages</span></td>
-              <td><span class="badge-warn">English Only</span></td>
-              <td><span class="badge-warn">English Only</span></td>
-              <td><span class="badge-warn">English Only</span></td>
-              <td><span class="badge-bad">Latin alphabets Only</span></td>
-              <td><span class="badge-warn">English Only</span></td>
+              <td class="row-label" data-i18n="comp_l10n">Localization</td>
+              <td class="col-highlight"><span class="badge-good" data-i18n="comp_multi">Multiple languages</span></td>
+              <td><span class="badge-warn" data-i18n="comp_en">English Only</span></td>
+              <td><span class="badge-warn" data-i18n="comp_en">English Only</span></td>
+              <td><span class="badge-warn" data-i18n="comp_en">English Only</span></td>
+              <td><span class="badge-bad" data-i18n="comp_latin">Latin alphabets Only</span></td>
+              <td><span class="badge-warn" data-i18n="comp_en">English Only</span></td>
             </tr>
             <tr>
-              <td class="row-label">Drag &amp; Drop</td>
-              <td class="col-highlight"><span class="badge-good">✓ Supported</span></td>
-              <td><span class="badge-good">✓ Supported</span></td>
+              <td class="row-label" data-i18n="comp_dnd">Drag &amp; Drop</td>
+              <td class="col-highlight"><span class="badge-good" data-i18n="comp_sup">✓ Supported</span></td>
+              <td><span class="badge-good" data-i18n="comp_sup">✓ Supported</span></td>
               <td>-</td>
               <td>—</td>
-              <td><span class="badge-bad">✗ None</span></td>
+              <td><span class="badge-bad" data-i18n="comp_none">✗ None</span></td>
               <td>—</td>
             </tr>
             <tr>
-              <td class="row-label">ADB Debugging</td>
-              <td class="col-highlight"><span class="badge-good">No</span></td>
-              <td><span class="badge-good">No</span></td>
-              <td><span class="badge-bad">Required</span></td>
-              <td><span class="badge-good">No</span></td>
-              <td><span class="badge-good">No</span></td>
+              <td class="row-label" data-i18n="comp_adb">ADB Debugging</td>
+              <td class="col-highlight"><span class="badge-good" data-i18n="comp_no">No</span></td>
+              <td><span class="badge-good" data-i18n="comp_no">No</span></td>
+              <td><span class="badge-bad" data-i18n="comp_req">Required</span></td>
+              <td><span class="badge-good" data-i18n="comp_no">No</span></td>
+              <td><span class="badge-good" data-i18n="comp_no">No</span></td>
               <td>-</td>
             </tr>
             <tr>
-              <td class="row-label">Multi-device</td>
-              <td class="col-highlight"><span class="badge-good">✓ Supported</span></td>
-              <td><span class="badge-bad">✗ No</span></td>
+              <td class="row-label" data-i18n="comp_multi_dev">Multi-device</td>
+              <td class="col-highlight"><span class="badge-good" data-i18n="comp_sup">✓ Supported</span></td>
+              <td><span class="badge-bad" data-i18n="comp_no_x">✗ No</span></td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -287,24 +301,25 @@
   <section class="get-started" id="get-started">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">Ready in minutes.</h2>
-        <p class="section-sub">Get SwiftMTP up and running on your Mac in just a few steps.</p>
+        <h2 class="section-title" data-i18n="start_title">Ready in minutes.</h2>
+        <p class="section-sub" data-i18n="start_sub">Get SwiftMTP up and running on your Mac in just a few steps.</p>
       </div>
       <div class="steps" id="steps">
         <div class="step" id="step-1">
           <div class="step-num">1</div>
           <div class="step-body">
-            <h3>Download the release</h3>
-            <p>Grab the latest <code>.dmg</code> from the <a href="https://github.com/Neighbor-Z/SwiftMTP/releases/latest"
-                target="_blank">Releases page</a>, or build from source using Xcode 15+.</p>
+            <h3 data-i18n="step_1_title">Download the release</h3>
+            <p data-i18n="step_1_desc">Grab the latest <code>.dmg</code> from the <a
+                href="https://github.com/Neighbor-Z/SwiftMTP/releases/latest" target="_blank">Releases page</a>, or
+              build from source using Xcode 15+.</p>
           </div>
         </div>
         <div class="step-connector"></div>
         <div class="step" id="step-2">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h3>Connect your device</h3>
-            <p>Plug in your Android phone via USB and set it to <strong>File Transfer (MTP)</strong> mode. SwiftMTP will
+            <h3 data-i18n="step_2_title">Connect your device</h3>
+            <p data-i18n="step_2_desc">Plug in your Android phone via USB and set it to <strong>File Transfer (MTP)</strong> mode. SwiftMTP will
               detect it automatically.</p>
           </div>
         </div>
@@ -312,8 +327,8 @@
         <div class="step" id="step-3">
           <div class="step-num">3</div>
           <div class="step-body">
-            <h3>Browse &amp; transfer</h3>
-            <p>Navigate your device's file system, drag &amp; drop files, and watch real-time progress as your files
+            <h3 data-i18n="step_3_title">Browse &amp; transfer</h3>
+            <p data-i18n="step_3_desc">Navigate your device's file system, drag &amp; drop files, and watch real-time progress as your files
               move at full speed.</p>
           </div>
         </div>
@@ -325,7 +340,7 @@
           <svg class="btn-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M10 3v10m0 0-3-3m3 3 3-3M4 17h12" />
           </svg>
-          Download SwiftMTP
+          <span data-i18n="cta_download">Download SwiftMTP</span>
         </a>
         <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"
           id="cta-github">
@@ -333,7 +348,7 @@
             <path
               d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
           </svg>
-          Star on GitHub
+          <span data-i18n="cta_github">Star on GitHub</span>
         </a>
       </div>
     </div>
@@ -344,9 +359,9 @@
     <div class="section-inner">
       <div class="l10n-inner">
         <div class="l10n-text">
-          <div class="l10n-tag">🌍 Community</div>
-          <h2 class="l10n-title">Help us speak your language.</h2>
-          <p class="l10n-desc">
+          <div class="l10n-tag" data-i18n="l10n_tag">🌍 Community</div>
+          <h2 class="l10n-title" data-i18n="l10n_title">Help us speak your language.</h2>
+          <p class="l10n-desc" data-i18n="l10n_desc">
             SwiftMTP currently supports <strong>English, Chinese, Japanese, and Spanish</strong>.
             Every user deserves a native experience in their own language — and we can't do it alone.
             You can improve the translation or add your new language freely. Your contribution makes a real difference.
@@ -356,7 +371,7 @@
             <span class="lang-chip">中文</span>
             <span class="lang-chip">日本語</span>
             <span class="lang-chip">Español</span>
-            <span class="lang-chip lang-chip-add">+ Your languages</span>
+            <span class="lang-chip lang-chip-add" data-i18n="l10n_add">+ Your languages</span>
           </div>
           <a href="https://github.com/Neighbor-Z/SwiftMTP/pulls" target="_blank" rel="noopener"
             class="btn btn-primary btn-lg l10n-btn" id="l10n-btn">
@@ -364,9 +379,9 @@
               <path
                 d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
             </svg>
-            Contribute on GitHub
+            <span data-i18n="l10n_btn">Contribute on GitHub</span>
           </a>
-          <p class="l10n-hint">Open <code>Localizable.xcstrings</code> and add your translations — it's that simple.</p>
+          <p class="l10n-hint" data-i18n="l10n_hint">Open <code>Localizable.xcstrings</code> and add your translations — it's that simple.</p>
         </div>
         <div class="l10n-visual">
           <div class="l10n-globe">🌐</div>
@@ -376,7 +391,7 @@
             <div class="l10n-orbit" style="--d:1.6s;--r:90px;--a:120deg" data-label="한국어">KO</div>
             <div class="l10n-orbit" style="--d:2.4s;--r:90px;--a:180deg" data-label="More">...</div>
             <div class="l10n-orbit" style="--d:3.2s;--r:90px;--a:240deg" data-label="العربية">AR</div>
-            <div class="l10n-orbit" style="--d:4s;--r:90px;--a:300deg" data-label="Українська">UK</div>
+            <div class="l10n-orbit" style="--d:4s;--r:90px;--a:300deg" data-label="Українська">УК</div>
           </div>
         </div>
       </div>
@@ -390,12 +405,12 @@
         <img src="assets/icon.png" alt="SwiftMTP" class="footer-icon" />
         <span>SwiftMTP</span>
       </div>
-      <p class="footer-copy">Released under the <a href="https://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GPL
-          License</a> · Inspired by <a href="https://github.com/ganeshrvel/openmtp/" target="_blank">OpenMTP</a></p>
-      <p class="footer-copy">Built with ❤️ in Swift for macOS · <a href="https://buymeacoffee.com/neighbor_z" target="_blank">☕️ Buy Me a Coffee</a></p>
+      <p class="footer-copy" data-i18n="ft_gpl">Released under the <a href="https://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GPL License</a> · Inspired by <a href="https://github.com/ganeshrvel/openmtp/" target="_blank">OpenMTP</a></p>
+      <p class="footer-copy" data-i18n="ft_made">Built with ❤️ in Swift for macOS · <a href="https://buymeacoffee.com/neighbor_z" target="_blank">☕️ Buy Me a Coffee</a></p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 
