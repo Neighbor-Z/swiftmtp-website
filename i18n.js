@@ -1,11 +1,12 @@
 const i18n = {
   "en": {
     "nav_features": "Features",
+    "nav_ai": "AI",
     "nav_compare": "Compare",
     "nav_started": "Get Started",
     "nav_github": "GitHub",
     "hero_title": "SwiftMTP",
-    "hero_desc": "A lightweight, modern macOS app for MTP device management.",
+    "hero_desc": "A lightweight, modern macOS app for MTP device management — now supercharged by AI.",
     "btn_download": "Download",
     "btn_github": "View on GitHub",
     "hero_sysreq": "Requires macOS 12.0 or later · Universal binary (Apple Silicon & Intel)",
@@ -77,16 +78,24 @@ const i18n = {
     "l10n_btn": "Contribute on GitHub",
     "l10n_hint": "Open <code>Localizable.xcstrings</code> and add your translations — it's that simple.",
     "ft_gpl": "Released under the <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\" target=\"_blank\">GPL License</a> · Inspired by <a href=\"https://github.com/ganeshrvel/openmtp/\" target=\"_blank\">OpenMTP</a>",
-    "ft_made": "Built with ❤️ in Swift for macOS · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ Buy Me a Coffee</a>"
+    "ft_made": "Built with ❤️ in Swift for macOS · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ Buy Me a Coffee</a>",
+    "ai_title": "Intelligence, Reimagined",
+    "ai_sub": "Discover a more efficient way to manage your MTP devices.",
+    "ai_search": "Natural Language Search",
+    "ai_search_desc": "Find your files naturally. Just type what you're looking for, like 'Photos of last week' or 'Work documents from 2024'.",
+    "ai_analysis": "Device Info Analysis",
+    "ai_analysis_desc": "Get smart insights about your device hardware, connectivity status, and potential performance optimizations.",
+    "ai_new_badge": "NEW"
   },
 
   "zh-Hans": {
     "nav_features": "特性",
+    "nav_ai": "AI 功能",
     "nav_compare": "比较",
     "nav_started": "快速开始",
     "nav_github": "GitHub",
     "hero_title": "SwiftMTP",
-    "hero_desc": "一款轻量、现代的 macOS MTP 设备管理工具。",
+    "hero_desc": "一款轻量、现代的 macOS MTP 设备管理工具 —— 现更添 AI 强力驱动。",
     "btn_download": "下载",
     "btn_github": "在 GitHub 上查看",
     "hero_sysreq": "需要 macOS 12.0 或更高版本 · 原生支持 Apple 芯片与 Intel 芯片",
@@ -158,16 +167,24 @@ const i18n = {
     "l10n_btn": "在 GitHub 上贡献",
     "l10n_hint": "打开 <code>Localizable.xcstrings</code> 并添加你的翻译 —— 就是这么简单。",
     "ft_gpl": "基于 <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\" target=\"_blank\">GPL</a> 许可证发布 · 灵感来自 <a href=\"https://github.com/ganeshrvel/openmtp/\" target=\"_blank\">OpenMTP</a>",
-    "ft_made": "用 ❤️ 基于 Swift 为 macOS 构建 · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ 请我喝杯咖啡</a>"
+    "ft_made": "用 ❤️ 基于 Swift 为 macOS 构建 · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ 请我喝杯咖啡</a>",
+    "ai_title": "智能，重塑体验",
+    "ai_sub": "借助 AI 的智慧，让文件管理变得前所未有的简单与高效。",
+    "ai_search": "自然语言搜索",
+    "ai_search_desc": "像聊天一样搜索文件。只需输入您的需求，如“上周的照片”或“2024 年的工作文档”。",
+    "ai_analysis": "设备信息分析",
+    "ai_analysis_desc": "获取有关设备硬件、连接状态和潜在性能优化的智能见解。",
+    "ai_new_badge": "新功能"
   },
 
   "zh-Hant": {
     "nav_features": "特色功能",
+    "nav_ai": "AI 功能",
     "nav_compare": "比較",
     "nav_started": "快速開始",
     "nav_github": "GitHub",
     "hero_title": "SwiftMTP",
-    "hero_desc": "一款輕量、現代的 macOS MTP 裝置管理工具。",
+    "hero_desc": "一款輕量、現代的 macOS MTP 裝置管理工具 —— 現更添 AI 強力驅動。",
     "btn_download": "下載",
     "btn_github": "在 GitHub 上查看",
     "hero_sysreq": "需要 macOS 12.0 或更高版本 · 原生支持 Apple 晶片與 Intel 晶片",
@@ -239,16 +256,24 @@ const i18n = {
     "l10n_btn": "在 GitHub 上貢獻",
     "l10n_hint": "開啟 <code>Localizable.xcstrings</code> 並加入你的翻譯 —— 就是這麼簡單。",
     "ft_gpl": "基於 <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\" target=\"_blank\">GPL</a> 授權條款發佈 · 靈感來自 <a href=\"https://github.com/ganeshrvel/openmtp/\" target=\"_blank\">OpenMTP</a>",
-    "ft_made": "用 ❤️ 基於 Swift 為 macOS 構建 · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ 請我喝杯咖啡</a>"
+    "ft_made": "用 ❤️ 基於 Swift 為 macOS 構建 · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ 請我喝杯咖啡</a>",
+    "ai_title": "智能，重塑體驗",
+    "ai_sub": "借助 AI 的智慧，讓檔案管理變得前所未有的簡單與高效。",
+    "ai_search": "自然語言搜索",
+    "ai_search_desc": "像聊天一樣搜索檔案。只需輸入您的需求，如「上週的照片」或「2024 年的工作文檔」。",
+    "ai_analysis": "裝置信息分析",
+    "ai_analysis_desc": "獲取有關裝置硬體、連接狀態和潛在性能優化的智能見解。",
+    "ai_new_badge": "新功能"
   },
 
   "ja": {
     "nav_features": "特徴",
+    "nav_ai": "AI",
     "nav_compare": "比較",
     "nav_started": "はじめに",
     "nav_github": "GitHub",
     "hero_title": "SwiftMTP",
-    "hero_desc": "macOS 用の最新の MTP デバイス管理ツールです。",
+    "hero_desc": "macOS 用の最新の MTP デバイス管理ツールです。AIにより強力にパワーアップしました。",
     "btn_download": "ダウンロード",
     "btn_github": "GitHubで見る",
     "hero_sysreq": "macOS 12.0以降が必要 · ユニバーサル (Apple Silicon & Intel)",
@@ -320,16 +345,24 @@ const i18n = {
     "l10n_btn": "GitHubで貢献する",
     "l10n_hint": "<code>Localizable.xcstrings</code> を開いて、翻訳を追加するだけです。とても簡単です。",
     "ft_gpl": "<a href=\"https://www.gnu.org/licenses/gpl-2.0.html\" target=\"_blank\">GPLライセンス</a>でリリース · 影響を受けたプロジェクト: <a href=\"https://github.com/ganeshrvel/openmtp/\" target=\"_blank\">OpenMTP</a>",
-    "ft_made": "macOSのためにSwiftで❤️を込めて構築 · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ コーヒーを奢る</a>"
+    "ft_made": "macOSのためにSwiftで❤️を込めて構築 · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ コーヒーを奢る</a>",
+    "ai_title": "インテリジェンスが変える体験",
+    "ai_sub": "AIの力で、ファイル管理はかつてないほどスマートに。",
+    "ai_search": "自然言語検索",
+    "ai_search_desc": "会話するようにファイルを検索。「先週の写真」や「2024年の仕事の資料」など、自由な言葉で探せます。",
+    "ai_analysis": "デバイス情報のスマート分析",
+    "ai_analysis_desc": "ハードウェアの仕様、接続状況、パフォーマンスの最適化など、AIがデバイスの健康状態を診断します。",
+    "ai_new_badge": "新機能"
   },
 
   "es": {
     "nav_features": "Características",
+    "nav_ai": "AI",
     "nav_compare": "Comparar",
     "nav_started": "Empezar",
     "nav_github": "GitHub",
     "hero_title": "SwiftMTP",
-    "hero_desc": "Una aplicación ligera y moderna para gestionar dispositivos MTP en macOS.",
+    "hero_desc": "Una aplicación ligera y moderna para gestionar dispositivos MTP en macOS — ahora repotenciada con IA.",
     "btn_download": "Descargar",
     "btn_github": "Ver en GitHub",
     "hero_sysreq": "Requiere macOS 12.0 o superior · Binario universal (Apple Silicon e Intel)",
@@ -401,15 +434,23 @@ const i18n = {
     "l10n_btn": "Contribuir en GitHub",
     "l10n_hint": "Abre <code>Localizable.xcstrings</code> y añade tus traducciones — así de simple.",
     "ft_gpl": "Lanzado bajo la <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\" target=\"_blank\">Licencia GPL</a> · Inspirado por <a href=\"https://github.com/ganeshrvel/openmtp/\" target=\"_blank\">OpenMTP</a>",
-    "ft_made": "Hecho con ❤️ en Swift para macOS · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ Cómprame un café</a>"
+    "ft_made": "Hecho con ❤️ en Swift para macOS · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ Cómprame un café</a>",
+    "ai_title": "Inteligencia, reinventada",
+    "ai_sub": "Descubre una forma más sofisticada de gestionar tus dispositivos MTP.",
+    "ai_search": "Búsqueda en lenguaje natural",
+    "ai_search_desc": "Encuentra tus archivos de forma natural. Solo escribe lo que buscas, como 'Fotos de la semana pasada' o 'Documentos de trabajo de 2024'.",
+    "ai_analysis": "Análisis inteligente del dispositivo",
+    "ai_analysis_desc": "Obtén información detallada sobre el hardware de tu dispositivo, el estado de la conexión y posibles optimizaciones de rendimiento.",
+    "ai_new_badge": "NUEVO"
   },
   "ar": {
     "nav_features": "الميزات",
+    "nav_ai": "AI",
     "nav_compare": "مقارنة",
     "nav_started": "البدء",
     "nav_github": "GitHub",
     "hero_title": "SwiftMTP",
-    "hero_desc": "تطبيق خفيف وحديث لنظام macOS لإدارة أجهزة MTP.",
+    "hero_desc": "تطبيق خفيف وحديث لنظام macOS لإدارة أجهزة MTP - الآن مدعوم بقوة الذكاء الاصطناعي.",
     "btn_download": "تنزيل",
     "btn_github": "عرض على GitHub",
     "hero_sysreq": "يتطلب macOS 12.0 أو أحدث · ثنائي عالمي (Apple Silicon و Intel)",
@@ -481,7 +522,14 @@ const i18n = {
     "l10n_btn": "المساهمة على GitHub",
     "l10n_hint": "افتح <code>Localizable.xcstrings</code> وأضف ترجماتك — الأمر بهذه البساطة.",
     "ft_gpl": "مُصدر بموجب <a href=\"https://www.gnu.org/licenses/gpl-2.0.html\" target=\"_blank\">رخصة GPL</a> · مستوحى من <a href=\"https://github.com/ganeshrvel/openmtp/\" target=\"_blank\">OpenMTP</a>",
-    "ft_made": "صُنع بـ ❤️ بلغة Swift لنظام macOS · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ اشترِ لي قهوة</a>"
+    "ft_made": "صُنع بـ ❤️ بلغة Swift لنظام macOS · <a href=\"https://buymeacoffee.com/neighbor_z\" target=\"_blank\">☕️ اشترِ لي قهوة</a>",
+    "ai_title": "الذكاء، برؤية جديدة",
+    "ai_sub": "اكتشف طريقة أكثر رقيًا لإدارة أجهزة MTP الخاصة بك.",
+    "ai_search": "البحث باللغة الطبيعية",
+    "ai_search_desc": "ابحث عن ملفاتك ببساطة كما تتحدث. اكتب فقط ما تبحث عنه، مثل 'صور عطلتي الأخيرة' أو 'وثائق العمل لعام 2024'.",
+    "ai_analysis": "تحليل ذكي لمعلومات الجهاز",
+    "ai_analysis_desc": "احصل على رؤى ذكية حول أجهزة جهازك، وحالة الاتصال، وتحسينات الأداء المحتملة.",
+    "ai_new_badge": "جديد"
   }
 };
 
