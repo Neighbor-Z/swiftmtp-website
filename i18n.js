@@ -85,7 +85,9 @@ const i18n = {
     "ai_search_desc": "Find your files naturally. Just type what you're looking for, like 'Photos of last week' or 'Work documents from 2024'.",
     "ai_analysis": "Device Info Analysis",
     "ai_analysis_desc": "Get smart insights about your device hardware, connectivity status, and potential performance optimizations.",
-    "ai_new_badge": "NEW"
+    "ai_new_badge": "NEW",
+    "ai_cli": "Powerful CLI",
+    "ai_cli_desc": "Automate tasks or manage devices quickly with our brand-new command-line interface. Features stateless commands and a persistent interactive shell."
   },
 
   "zh-Hans": {
@@ -174,7 +176,9 @@ const i18n = {
     "ai_search_desc": "像聊天一样搜索文件。只需输入您的需求，如“上周的照片”或“2024 年的工作文档”。",
     "ai_analysis": "设备信息分析",
     "ai_analysis_desc": "获取有关设备硬件、连接状态和潜在性能优化的智能见解。",
-    "ai_new_badge": "新功能"
+    "ai_new_badge": "新功能",
+    "ai_cli": "强大的命令行工具",
+    "ai_cli_desc": "借助我们全新的命令行工具，快速管理设备或实现任务自动化。支持无状态命令和持久化的交互式 Shell。"
   },
 
   "zh-Hant": {
@@ -263,7 +267,9 @@ const i18n = {
     "ai_search_desc": "像聊天一樣搜索檔案。只需輸入您的需求，如「上週的照片」或「2024 年的工作文檔」。",
     "ai_analysis": "裝置信息分析",
     "ai_analysis_desc": "獲取有關裝置硬體、連接狀態和潛在性能優化的智能見解。",
-    "ai_new_badge": "新功能"
+    "ai_new_badge": "新功能",
+    "ai_cli": "強大的命令列工具",
+    "ai_cli_desc": "借助我們全新的命令列工具，快速管理裝置或實現任務自動化。支援無狀態命令和持久化的互動式 Shell。"
   },
 
   "ja": {
@@ -352,7 +358,9 @@ const i18n = {
     "ai_search_desc": "会話するようにファイルを検索。「先週の写真」や「2024年の仕事の資料」など、自由な言葉で探せます。",
     "ai_analysis": "デバイス情報のスマート分析",
     "ai_analysis_desc": "ハードウェアの仕様、接続状況、パフォーマンスの最適化など、AIがデバイスの健康状態を診断します。",
-    "ai_new_badge": "新機能"
+    "ai_new_badge": "新機能",
+    "ai_cli": "強力なCLI",
+    "ai_cli_desc": "新しいコマンドラインインターフェースを使用して、タスクを自動化したりデバイスをすばやく管理したりできます。ステートレスコマンドとインタラクティブなシェルを備えています。"
   },
 
   "es": {
@@ -441,7 +449,9 @@ const i18n = {
     "ai_search_desc": "Encuentra tus archivos de forma natural. Solo escribe lo que buscas, como 'Fotos de la semana pasada' o 'Documentos de trabajo de 2024'.",
     "ai_analysis": "Análisis inteligente del dispositivo",
     "ai_analysis_desc": "Obtén información detallada sobre el hardware de tu dispositivo, el estado de la conexión y posibles optimizaciones de rendimiento.",
-    "ai_new_badge": "NUEVO"
+    "ai_new_badge": "NUEVO",
+    "ai_cli": "Potente CLI",
+    "ai_cli_desc": "Automatiza tareas o gestiona dispositivos rápidamente con nuestra nueva interfaz de línea de comandos. Cuenta con comandos sin estado y un shell interactivo persistente."
   },
   "ar": {
     "nav_features": "الميزات",
