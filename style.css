@@ -159,6 +159,26 @@ a {
 }
 
 /* ─── BUTTONS ─── */
+.appstore-link {
+  display: inline-block;
+  height: 42px;
+  transition: transform .2s, opacity .2s;
+}
+
+.appstore-link:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.appstore-badge {
+  height: 100%;
+  width: auto;
+}
+
+.cta-block .appstore-link {
+  height: 48px;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -175,6 +195,12 @@ a {
   border: 1.5px solid transparent;
   white-space: nowrap;
   outline: none;
+}
+
+/* Match border-radius to the adjacent App Store badge */
+.hero-cta .btn,
+.cta-block .btn {
+  border-radius: 8px;
 }
 
 .btn-icon {

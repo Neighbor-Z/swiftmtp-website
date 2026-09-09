@@ -64,7 +64,7 @@ const i18n = {
     "start_title": "Ready in minutes.",
     "start_sub": "Get SwiftMTP up and running on your Mac in just a few steps.",
     "step_1_title": "Download the release",
-    "step_1_desc": "Grab the latest <code>.dmg</code> from the <a href=\"https://github.com/Neighbor-Z/SwiftMTP/releases/latest\" target=\"_blank\">Releases page</a>, or build from source using Xcode 15+.",
+    "step_1_desc": "Download from the <strong>Mac App Store</strong>, or grab the latest <code>.dmg</code> from the Releases page, or build from source using Xcode 15+.",
     "step_2_title": "Connect your device",
     "step_2_desc": "Plug in your Android phone via USB and set it to <strong>File Transfer (MTP)</strong> mode. SwiftMTP will detect it automatically.",
     "step_3_title": "Browse & transfer",
@@ -155,7 +155,7 @@ const i18n = {
     "start_title": "几分钟即可准备就绪。",
     "start_sub": "只需简单几步，即可在你的 Mac 上运行 SwiftMTP。",
     "step_1_title": "下载发行版",
-    "step_1_desc": "从 <a href=\"https://github.com/Neighbor-Z/SwiftMTP/releases/latest\" target=\"_blank\">发行页面</a> 获取最新的 <code>.dmg</code> ，或使用 Xcode 15+ 从源码构建。",
+    "step_1_desc": "从 <strong>Mac App Store</strong> 下载，或者从发行页面获取最新的 <code>.dmg</code> ，也可以使用 Xcode 15+ 从源码构建。",
     "step_2_title": "连接你的设备",
     "step_2_desc": "通过 USB 连接你的 Android 手机并将其设置为 <strong>文件传输 (MTP)</strong> 模式。SwiftMTP 会自动检测到它。",
     "step_3_title": "浏览并传输",
@@ -246,7 +246,7 @@ const i18n = {
     "start_title": "幾分鐘即可準備就緒。",
     "start_sub": "只需簡單幾步，即可在你的 Mac 上執行 SwiftMTP。",
     "step_1_title": "下載發行版",
-    "step_1_desc": "從 <a href=\"https://github.com/Neighbor-Z/SwiftMTP/releases/latest\" target=\"_blank\">發行頁面</a> 取得最新的 <code>.dmg</code> ，或使用 Xcode 15+ 從原始碼構建。",
+    "step_1_desc": "從 <strong>Mac App Store</strong> 下載，或者從發行頁面取得最新的 <code>.dmg</code> ，也可以使用 Xcode 15+ 從原始碼構建。",
     "step_2_title": "連接你的裝置",
     "step_2_desc": "透過 USB 連接你的 Android 手機並將其設置為 <strong>檔案傳輸 (MTP)</strong> 模式。SwiftMTP 會自動偵測到它。",
     "step_3_title": "瀏覽並傳輸",
@@ -337,7 +337,7 @@ const i18n = {
     "start_title": "数分で準備完了。",
     "start_sub": "わずかなステップで、MacでSwiftMTPを実行できます。",
     "step_1_title": "リリースをダウンロード",
-    "step_1_desc": "最新の <code>.dmg</code> を <a href=\"https://github.com/Neighbor-Z/SwiftMTP/releases/latest\" target=\"_blank\">リリースページ</a> から入手するか、Xcode 15+を使用してソースからビルドします。",
+    "step_1_desc": "<strong>Mac App Store</strong> からダウンロードするか、最新の <code>.dmg</code> を リリースページ から入手するか、Xcode 15+を使用してソースからビルドします。",
     "step_2_title": "デバイスを接続",
     "step_2_desc": "Android端末をUSBで接続し、<strong>ファイル転送 (MTP)</strong> モードに設定します。SwiftMTPが自動的に検出します。",
     "step_3_title": "ブラウズと転送",
@@ -428,7 +428,7 @@ const i18n = {
     "start_title": "Listo en minutos.",
     "start_sub": "Pon en marcha SwiftMTP en tu Mac en unos pocos pasos.",
     "step_1_title": "Descarga la versión",
-    "step_1_desc": "Obtén el último <code>.dmg</code> desde la <a href=\"https://github.com/Neighbor-Z/SwiftMTP/releases/latest\" target=\"_blank\">página de lanzamientos</a>, o compílalo desde el código fuente usando Xcode 15+.",
+    "step_1_desc": "Descárgalo desde la <strong>Mac App Store</strong>, obtén el último <code>.dmg</code> desde la página de lanzamientos, o compílalo desde el código fuente usando Xcode 15+.",
     "step_2_title": "Conecta tu dispositivo",
     "step_2_desc": "Conecta tu teléfono Android por USB y ajústalo al modo <strong>Transferencia de archivos (MTP)</strong>. SwiftMTP lo detectará automáticamente.",
     "step_3_title": "Navega y transfiere",
@@ -518,7 +518,7 @@ const i18n = {
     "start_title": "جاهز في دقائق.",
     "start_sub": "قم بتشغيل SwiftMTP على جهاز Mac الخاص بك في بضع خطوات فقط.",
     "step_1_title": "تنزيل الإصدار",
-    "step_1_desc": "احصل على أحدث ملف <code>.dmg</code> من <a href=\"https://github.com/Neighbor-Z/SwiftMTP/releases/latest\" target=\"_blank\">صفحة الإصدارات</a>، أو قم بالبناء من المصدر باستخدام Xcode 15+.",
+    "step_1_desc": "قم بالتنزيل من <strong>Mac App Store</strong>، أو احصل على أحدث ملف <code>.dmg</code> من صفحة الإصدارات، أو قم بالبناء من المصدر باستخدام Xcode 15+.",
     "step_2_title": "قم بتوصيل جهازك",
     "step_2_desc": "قم بتوصيل هاتف Android الخاص بك عبر USB واضبطه على وضع <strong>نقل الملفات (MTP)</strong>. سيكتشفه SwiftMTP تلقائيًا.",
     "step_3_title": "تصفح وانقل",
@@ -539,7 +539,9 @@ const i18n = {
     "ai_search_desc": "ابحث عن ملفاتك ببساطة كما تتحدث. اكتب فقط ما تبحث عنه، مثل 'صور عطلتي الأخيرة' أو 'وثائق العمل لعام 2024'.",
     "ai_analysis": "تحليل ذكي لمعلومات الجهاز",
     "ai_analysis_desc": "احصل على رؤى ذكية حول أجهزة جهازك، وحالة الاتصال، وتحسينات الأداء المحتملة.",
-    "ai_new_badge": "جديد"
+    "ai_new_badge": "جديد",
+    "ai_cli": "واجهة سطر أوامر قوية",
+    "ai_cli_desc": "قم بأتمتة المهام أو إدارة الأجهزة بسرعة من خلال واجهة سطر الأوامر الجديدة الخاصة بنا. تتميز بأوامر غير تخزينية وصدفة تفاعلية مستمرة."
   }
 };
 
@@ -556,6 +558,23 @@ function setLanguage(lang) {
 
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  // Update App Store badges
+  const appStoreBadges = {
+    'ar': 'assets/Download_on_the_Mac_App_Store_Badge_AR_RGB_blk_102417.svg',
+    'zh-Hans': 'assets/Download_on_the_Mac_App_Store_Badge_CNSC_RGB_blk_092917.svg',
+    'zh-Hant': 'assets/Download_on_the_Mac_App_Store_Badge_CNTC_RGB_blk_100217.svg',
+    'es': 'assets/Download_on_the_Mac_App_Store_Badge_ES_RGB_blk_100217.svg',
+    'ja': 'assets/Download_on_the_Mac_App_Store_Badge_JP_RGB_blk_100317.svg',
+    'default': 'assets/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg'
+  };
+
+  const badgeSrc = appStoreBadges[lang] || appStoreBadges['default'];
+  const badgeHero = document.getElementById('appstore-badge-hero');
+  const badgeCta = document.getElementById('appstore-badge-cta');
+  
+  if (badgeHero) badgeHero.src = badgeSrc;
+  if (badgeCta) badgeCta.src = badgeSrc;
 }
 
 function initI18n() {
