@@ -156,9 +156,9 @@
               </div>
 
               <div class="faq-item">
-                  <h3 class="faq-question">Is SwiftMTP compatible with Apple Silicon?</h3>
+                  <h3 class="faq-question">Got "OpenSession after reset: LIBUSB_ERROR_NOT_FOUND"?</h3>
                   <div class="faq-answer">
-                      <p>Yes, SwiftMTP is distributed as a Universal Binary, which means it runs natively at full speed on both Apple Silicon (M1/M2/M3) and Intel-based Macs.</p>
+                      <p>This could be due to other software occupying MTP sessions or a device connection issue. Please ensure software like Preview, Image Capture, or Android File Transfer is not running. For Android File Transfer, even if it's not running in the foreground, there is an Android File Transfer Agent in the system background to detect USB MTP device connections in real time and automatically launch the main app. You can exit Android File Transfer Agent in Activity Monitor. After that, please reconnect or restart your device.</p>
                   </div>
               </div>
 
