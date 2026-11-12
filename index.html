@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SwiftMTP – Modern Android File Transfer for macOS</title>
   <meta name="description"
-    content="SwiftMTP is a lightweight, native Swift-based MTP file manager for macOS. Browse, transfer, and manage files on Android devices with blazing speed and full localization support. It's now reimagined with powerful AI features. Experience innovative natural language search, intelligent device analysis. The most advanced, native substitute for Android File Transfer." />
+    content="SwiftMTP: The next-generation MTP file manager for macOS, now reimagined with powerful AI features. Experience innovative natural language search, intelligent device analysis, and fast transfer speeds. The most advanced, native substitute for Android File Transfer." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -26,8 +26,9 @@
         <span class="nav-title">SwiftMTP</span>
       </div>
       <div class="nav-links">
-        <a href="#features" id="nav-features" data-i18n="nav_features">Features</a>
+        <a href="#showcase" id="nav-showcase" data-i18n="nav_showcase">Views &amp; Sharing</a>
         <a href="#ai-features" id="nav-ai" data-i18n="nav_ai">AI</a>
+        <a href="#features" id="nav-features" data-i18n="nav_features">Features</a>
         <a href="#comparison" id="nav-comparison" data-i18n="nav_compare">Compare</a>
         <a href="#get-started" id="nav-started" data-i18n="nav_started">Get Started</a>
         <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-outline btn-sm nav-github-btn"
@@ -49,6 +50,13 @@
             <li class="dropdown-item" data-value="zh-Hant" role="option">繁體中文</li>
             <li class="dropdown-item" data-value="ja" role="option">日本語</li>
             <li class="dropdown-item" data-value="es" role="option">Español</li>
+            <li class="dropdown-item" data-value="de" role="option">Deutsch</li>
+            <li class="dropdown-item" data-value="fr" role="option">Français</li>
+            <li class="dropdown-item" data-value="uk" role="option">Українська</li>
+            <li class="dropdown-item" data-value="it" role="option">Italiano</li>
+            <li class="dropdown-item" data-value="ko" role="option">한국어</li>
+            <li class="dropdown-item" data-value="tr" role="option">Türkçe</li>
+            <li class="dropdown-item" data-value="vi" role="option">Tiếng Việt</li>
             <li class="dropdown-item" data-value="ar" role="option">العربية</li>
           </ul>
         </div>
@@ -112,89 +120,79 @@
         <div class="screenshot-frame">
           <img src="assets/screenshot.png" alt="SwiftMTP file browser" class="screenshot-img" />
         </div>
-        <div class="hero-glow"></div>
       </div>
 
     </div>
   </section>
 
-  <!-- ─── FEATURES ─── -->
-  <section class="features" id="features">
+  <!-- ─── VIEWS & SHARING ─── -->
+  <section class="showcase" id="showcase">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title" data-i18n="feat_title">Almost everything you need.</h2>
-        <p class="section-sub" data-i18n="feat_sub">A focused feature set designed to make MTP management effortless on macOS.</p>
+        <h2 class="section-title" data-i18n="show_title">Browse your way.</h2>
+        <p class="section-sub" data-i18n="show_sub">Pick the view that fits your content, and send files to your device straight from Finder.</p>
       </div>
-      <div class="features-grid" id="features-grid">
 
-        <div class="feature-card" id="feat-native">
-          <div class="feat-icon-wrap feat-blue">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="3" />
-              <path d="M9 9h6M9 12h6M9 15h4" />
+      <!-- View modes -->
+      <div class="views-block">
+        <div class="segmented" role="tablist" aria-label="View modes">
+          <button class="segmented-btn active" role="tab" aria-selected="true" data-view="gallery" id="tab-gallery">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="11" rx="1.5" />
+              <path d="M3 19h3M9 19h3M15 19h3M18 19h3" />
             </svg>
-          </div>
-          <h3 data-i18n="feat_native">Native UI</h3>
-          <p data-i18n="feat_native_desc">Built with SwiftUI &amp; AppKit with familiar controls, Quick Look preview support and smooth animations.</p>
+            <span data-i18n="show_gallery">Gallery View</span>
+          </button>
+          <button class="segmented-btn" role="tab" aria-selected="false" data-view="icon" id="tab-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <rect x="4" y="4" width="6" height="6" rx="1" />
+              <rect x="14" y="4" width="6" height="6" rx="1" />
+              <rect x="4" y="14" width="6" height="6" rx="1" />
+              <rect x="14" y="14" width="6" height="6" rx="1" />
+            </svg>
+            <span data-i18n="show_icon">Icon View</span>
+          </button>
         </div>
 
-        <div class="feature-card" id="feat-favorites">
-          <div class="feat-icon-wrap feat-orange">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
-          </div>
-          <h3 data-i18n="feat_fav">Favorite Folders</h3>
-          <p data-i18n="feat_fav_desc">Easily add your frequently accessed folders to personal favorites for quick and convenient navigation.</p>
+        <div class="views-stage">
+          <figure class="view-panel active" data-view="gallery" role="tabpanel" aria-labelledby="tab-gallery">
+            <img src="assets/Gallery_View.jpg" alt="SwiftMTP Gallery View" class="view-img" loading="lazy" />
+            <figcaption data-i18n="show_gallery_desc">A large preview of the selected item with a scrollable filmstrip below — perfect for skimming photos and videos.</figcaption>
+          </figure>
+          <figure class="view-panel" data-view="icon" role="tabpanel" aria-labelledby="tab-icon">
+            <img src="assets/Icon_View.jpg" alt="SwiftMTP Icon View" class="view-img" loading="lazy" />
+            <figcaption data-i18n="show_icon_desc">A clean grid of icons and thumbnails, just like Finder. Switch between Icons, List and Gallery from the toolbar.</figcaption>
+          </figure>
         </div>
+      </div>
 
-        <div class="feature-card" id="feat-dnd">
-          <div class="feat-icon-wrap feat-purple">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M7 16l-4-4m0 0 4-4m-4 4h18M17 8l4 4m0 0-4 4" />
-            </svg>
-          </div>
-          <h3 data-i18n="feat_dnd">Drag &amp; Drop</h3>
-          <p data-i18n="feat_dnd_desc">Import files by dragging them straight from Finder into SwiftMTP and vice versa.</p>
+      <!-- Share extension -->
+      <div class="share-block">
+        <div class="share-text">
+          <span class="eyebrow" data-i18n="share_tag">Finder Integration</span>
+          <h3 class="share-title" data-i18n="share_title">Share from Finder.</h3>
+          <p class="share-desc" data-i18n="share_desc">Send files to your Android device without even opening the app. Right-click any file in Finder, choose Share, and pick a destination on your device.</p>
+          <ol class="share-steps">
+            <li>
+              <span class="share-step-num">1</span>
+              <span data-i18n="share_step1">Right-click files in Finder → <strong>Share</strong> → <strong>Transfer with SwiftMTP</strong>.</span>
+            </li>
+            <li>
+              <span class="share-step-num">2</span>
+              <span data-i18n="share_step2">Choose the device, storage and destination folder, then click <strong>Transfer</strong>.</span>
+            </li>
+          </ol>
         </div>
-
-        <div class="feature-card" id="feat-compact">
-          <div class="feat-icon-wrap feat-green">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="9" />
-              <path d="M12 8v4l3 3" />
-            </svg>
-          </div>
-          <h3 data-i18n="feat_compact">Tiny Footprint</h3>
-          <p data-i18n="feat_compact_desc">Under 20 MB installed. No bloat, no runtime.</p>
+        <div class="share-visuals">
+          <figure class="share-fig share-fig-menu">
+            <img src="assets/Share_Menu.png" alt="Share option in Finder menu" loading="lazy" />
+            <figcaption data-i18n="share_menu_cap">Share option in Finder menu</figcaption>
+          </figure>
+          <figure class="share-fig share-fig-picker">
+            <img src="assets/Share_Picker.jpg" alt="Destination picker" loading="lazy" />
+            <figcaption data-i18n="share_picker_cap">Destination picker</figcaption>
+          </figure>
         </div>
-
-        <div class="feature-card" id="feat-i18n">
-          <div class="feat-icon-wrap feat-teal">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z" />
-              <path d="M3.6 9h16.8M3.6 15h16.8" />
-              <path d="M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
-            </svg>
-          </div>
-          <h3 data-i18n="feat_i18n">Full Localization</h3>
-          <p data-i18n="feat_i18n_desc">Complete multilingual support via <code>Localizable.xcstrings</code> — including CJK characters rendered
-            correctly.</p>
-        </div>
-
-        <div class="feature-card" id="feat-progress">
-          <div class="feat-icon-wrap feat-pink">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M9 11l3 3L22 4" />
-              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-            </svg>
-          </div>
-          <h3 data-i18n="feat_progress">Real-time Progress</h3>
-          <p data-i18n="feat_progress_desc">Live transfer progress bars and status indicators keep you informed at every step.</p>
-        </div>
-
       </div>
     </div>
   </section>
@@ -203,10 +201,7 @@
   <section class="ai-features" id="ai-features">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">
-          <span data-i18n="ai_title">Intelligence, Reimagined</span>
-          <span class="badge-new" data-i18n="ai_new_badge">NEW</span>
-        </h2>
+        <h2 class="section-title" data-i18n="ai_title">Intelligence, Reimagined</h2>
         <p class="section-sub" data-i18n="ai_sub">Discover a more efficient way to manage your MTP devices.</p>
       </div>
       <div class="ai-grid">
@@ -236,18 +231,102 @@
             <p data-i18n="ai_cli_desc">Automate tasks or manage devices quickly with our brand-new command-line
               interface. Features stateless commands and a persistent interactive shell.</p>
           </div>
-          <div class="ai-visual ai-visual-small">
-            <div class="cli-mockup"
-              style="background:#1e1e1e; color:#fff; padding:1.5rem; border-radius:12px; font-family:monospace; font-size:14px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); width: 100%; text-align: left; line-height:1.5; overflow: hidden; white-space: nowrap;">
-              <span style="color:#4af626;">$</span> swiftmtp-cli devices<br />
+          <div class="ai-visual ai-visual-small ai-visual-cli">
+            <div class="cli-mockup">
+              <span class="cli-prompt">$</span> swiftmtp-cli devices<br />
               12345&nbsp;&nbsp;device&nbsp;&nbsp;Pixel 10 Pro XL<br />
-              <span style="color:#4af626;">$</span> swiftmtp-cli shell 12345<br />
+              <span class="cli-prompt">$</span> swiftmtp-cli shell 12345<br />
               mtp:/&gt; ls<br />
               &lt;DIR&gt;&nbsp;&nbsp;-&nbsp;&nbsp;DCIM<br />
               &lt;DIR&gt;&nbsp;&nbsp;-&nbsp;&nbsp;Download
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="feat_title">Almost everything you need.</h2>
+        <p class="section-sub" data-i18n="feat_sub">A focused feature set designed to make MTP management effortless on macOS.</p>
+      </div>
+      <div class="features-grid" id="features-grid">
+
+        <div class="feature-card" id="feat-native">
+          <div class="feat-icon-wrap feat-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <path d="M9 9h6M9 12h6M9 15h4" />
+            </svg>
+          </div>
+          <h3 data-i18n="feat_native">Native</h3>
+          <p data-i18n="feat_native_desc">Built with SwiftUI &amp; AppKit with Drag & Drop, Quick Look preview support and smooth animations within 20 MB.</p>
+        </div>
+
+        <div class="feature-card" id="feat-favorites">
+          <div class="feat-icon-wrap feat-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <h3 data-i18n="feat_fav">Favorites</h3>
+          <p data-i18n="feat_fav_desc">Easily add your frequently accessed folders to personal favorites for quick and convenient navigation.</p>
+        </div>
+
+        <div class="feature-card" id="feat-i18n">
+          <div class="feat-icon-wrap feat-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z" />
+              <path d="M3.6 9h16.8M3.6 15h16.8" />
+              <path d="M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18" />
+            </svg>
+          </div>
+          <h3 data-i18n="feat_i18n">Localization</h3>
+          <p data-i18n="feat_i18n_desc">Complete multilingual support via <code>Localizable.xcstrings</code> — including CJK characters rendered
+            correctly.</p>
+        </div>
+
+        <div class="feature-card" id="feat-progress">
+          <div class="feat-icon-wrap feat-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+          </div>
+          <h3 data-i18n="feat_progress">Real-time Progress</h3>
+          <p data-i18n="feat_progress_desc">Live transfer progress bars and status indicators keep you informed at every step.</p>
+        </div>
+
+        <div class="feature-card" id="feat-safe">
+          <div class="feat-icon-wrap feat-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 data-i18n="feat_safe">Safe &amp; Secure</h3>
+          <p data-i18n="feat_safe_desc">No ADB or USB debugging required. Just plug in and choose File Transfer mode.</p>
+        </div>
+
+        <div class="feature-card" id="feat-multi">
+          <div class="feat-icon-wrap feat-amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="4" width="8" height="14" rx="1.5" />
+              <rect x="13" y="6" width="8" height="14" rx="1.5" />
+              <path d="M7 15h0M17 17h0" />
+            </svg>
+          </div>
+          <h3 data-i18n="feat_multi">Multiple Devices</h3>
+          <p data-i18n="feat_multi_desc">Connect several devices at once and switch between their storages from the sidebar.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -415,6 +494,9 @@
           </svg>
           <span data-i18n="cta_download">Download SwiftMTP</span>
         </a>
+        <a href="https://apps.apple.com/us/app/swiftmtp/id6802688224" target="_blank" rel="noopener" class="appstore-link">
+          <img src="assets/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" class="appstore-badge" id="appstore-badge-cta" />
+        </a>
         <a href="https://github.com/Neighbor-Z/SwiftMTP" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"
           id="cta-github">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -422,9 +504,6 @@
               d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
           </svg>
           <span data-i18n="cta_github">Star on GitHub</span>
-        </a>
-        <a href="https://apps.apple.com/us/app/swiftmtp/id6802688224" target="_blank" rel="noopener" class="appstore-link">
-          <img src="assets/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" class="appstore-badge" id="appstore-badge-cta" />
         </a>
       </div>
     </div>
@@ -460,7 +539,12 @@
           <p class="l10n-hint" data-i18n="l10n_hint">Open <code>Localizable.xcstrings</code> and add your translations — it's that simple.</p>
         </div>
         <div class="l10n-visual">
-          <div class="l10n-globe">🌐</div>
+          <div class="l10n-globe" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9" />
+            </svg>
+          </div>
           <div class="l10n-orbits">
             <div class="l10n-orbit" style="--d:0s;--r:90px;--a:0deg" data-label="Deutsch">DE</div>
             <div class="l10n-orbit" style="--d:.8s;--r:90px;--a:60deg" data-label="Français">FR</div>
