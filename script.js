@@ -6,19 +6,37 @@
   const navIcon    = document.querySelector('.nav-icon');
   const footerIcon = document.querySelector('.footer-icon');
   const screenshot = document.querySelector('.screenshot-img');
+  const galleryView   = document.querySelector('.view-panel[data-view="gallery"] .view-img');
+  const iconView      = document.querySelector('.view-panel[data-view="icon"] .view-img');
+  const quickLookView = document.querySelector('.view-panel[data-view="quicklook"] .view-img');
 
   const IMAGES = {
-    dark:  { icon: 'assets/icon-dark.png',       screenshot: 'assets/screenshot-dark.png' },
-    light: { icon: 'assets/icon.png',             screenshot: 'assets/screenshot.png'      },
+    dark: {
+      icon:          'assets/icon-dark.png',
+      screenshot:    'assets/screenshot-dark.png',
+      galleryView:   'assets/Gallery_View_dark.jpg',
+      iconView:      'assets/Icon_View_dark.jpg',
+      quickLookView: 'assets/Quick_Look_dark.jpg',
+    },
+    light: {
+      icon:          'assets/icon.png',
+      screenshot:    'assets/screenshot.png',
+      galleryView:   'assets/Gallery_View.jpg',
+      iconView:      'assets/Icon_View.jpg',
+      quickLookView: 'assets/Quick_Look.jpg',
+    },
   };
 
   function applyTheme(theme) {
     html.setAttribute('data-theme', theme);
-    const imgs = IMAGES[theme];
+    const imgs = IMAGES[theme] || IMAGES.light;
     if (heroIcon)   heroIcon.src   = imgs.icon;
     if (navIcon)    navIcon.src    = imgs.icon;
     if (footerIcon) footerIcon.src = imgs.icon;
     if (screenshot) screenshot.src = imgs.screenshot;
+    if (galleryView)   galleryView.src   = imgs.galleryView;
+    if (iconView)      iconView.src      = imgs.iconView;
+    if (quickLookView) quickLookView.src = imgs.quickLookView;
   }
 
   // Load saved preference; default to 'light'
